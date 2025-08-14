@@ -46,7 +46,7 @@ activities = {
 def root():
     return RedirectResponse(url="/static/index.html")
 
-
+print "activity started"
 @app.get("/activities")
 def get_activities():
     return activities
